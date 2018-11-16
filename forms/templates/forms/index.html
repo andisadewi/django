@@ -1,0 +1,12 @@
+{% extends 'forms/base.html' %} 
+
+{% block content %}
+
+<h1>Index Title</h1>
+<div>Introduction text blah blah...</div>
+<br>
+<form action="{% url 'form_step' step='first' %}">
+    <input type="submit" value="Get started!" />
+</form>
+
+{% endblock %}
